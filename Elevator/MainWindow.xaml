@@ -1,0 +1,51 @@
+﻿<Window x:Class="Elevator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Elevator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="597.125" Width="591">
+    <Grid>
+        <Label x:Name="label" Content="Status" HorizontalAlignment="Left" Margin="29,19,0,0" VerticalAlignment="Top" Width="126"/>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Margin="29,50,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="491" Width="277" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Visible"/>
+        <GroupBox x:Name="groupBox" Header="Floor" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" Height="146" Width="236">
+            <Grid HorizontalAlignment="Left" Height="110" Margin="10,10,-2,0" VerticalAlignment="Top" Width="216">
+                <ComboBox x:Name="floors" HorizontalAlignment="Right" VerticalAlignment="Top" Width="134" RenderTransformOrigin="0.992,-0.909" Margin="0,10,39,0"/>
+                <Label x:Name="DisplayFloor" Content="Label" HorizontalAlignment="Left" Height="31" Margin="10,55,0,0" VerticalAlignment="Top" Width="64" FontWeight="Bold" BorderThickness="1" HorizontalContentAlignment="Center" Foreground="#FF258920" RenderTransformOrigin="0.483,0.268" BorderBrush="Black" FontSize="14"/>
+                <Button x:Name="btnUp" Content="" HorizontalAlignment="Left" Height="31" Margin="134,38,0,0" VerticalAlignment="Top" Width="33" BorderThickness="0" RenderTransformOrigin="0.485,1.645" Click="btnUp_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Imagenes/up.png"/>
+                    </Button.Background>
+                </Button>
+                <Button x:Name="btnDown" Content="" HorizontalAlignment="Left" Height="31" Margin="134,69,0,0" VerticalAlignment="Top" Width="33" BorderThickness="0" Click="btnDown_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Imagenes/down.png"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupBox1" Header="Elevator" HorizontalAlignment="Left" Margin="324,172,0,0" VerticalAlignment="Top" Height="352" Width="236">
+            <Grid HorizontalAlignment="Left" Margin="10,10,0,0" Width="202" Height="314" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="101*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="DisplayCabin" Content="Label" HorizontalAlignment="Left" Height="32" Margin="75,10,0,0" VerticalAlignment="Top" Width="64" FontWeight="Bold" BorderThickness="1" HorizontalContentAlignment="Center" Foreground="#FF258920" BorderBrush="Black" FontSize="14" RenderTransformOrigin="1.375,0.688"/>
+                <Button x:Name="btnFloor0" Content="0" HorizontalAlignment="Left" Margin="37,80,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor0_Click"/>
+                <Button x:Name="btnFloor1" Content="1" HorizontalAlignment="Left" Margin="137,80,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor1_Click"/>
+                <Button x:Name="btnFloor2" Content="2" HorizontalAlignment="Left" Margin="37,130,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor2_Click"/>
+                <Button x:Name="btnFloor3" Content="3" HorizontalAlignment="Left" Margin="137,130,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor3_Click"/>
+                <Button x:Name="btnFloor4" Content="4" HorizontalAlignment="Left" Margin="37,180,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor4_Click" RenderTransformOrigin="0.636,-0.411"/>
+                <Button x:Name="btnFloor5" Content="5" HorizontalAlignment="Left" Margin="137,180,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor5_Click"/>
+                <Button x:Name="btnFloor6" Content="6" HorizontalAlignment="Left" Margin="37,230,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor6_Click"/>
+                <Button x:Name="btnFloor7" Content="7" HorizontalAlignment="Left" Margin="137,230,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor7_Click"/>
+                <Button x:Name="btnFloor8" Content="8" HorizontalAlignment="Left" Margin="37,280,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor8_Click"/>
+                <Button x:Name="btnFloor9" Content="9" HorizontalAlignment="Left" Margin="137,280,0,0" VerticalAlignment="Top" Width="33" BorderBrush="#FFB4AAAA" Height="28" Click="btnFloor9_Click"/>
+            </Grid>
+        </GroupBox>
+
+
+
+    </Grid>
+</Window>
